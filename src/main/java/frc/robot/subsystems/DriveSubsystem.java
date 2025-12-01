@@ -7,7 +7,6 @@ import com.revrobotics.spark.config.SparkMaxConfig;
 import com.revrobotics.spark.config.SparkBaseConfig.IdleMode;
 import com.revrobotics.spark.SparkBase.ResetMode;
 import com.revrobotics.spark.SparkBase.PersistMode;
-
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
@@ -37,7 +36,8 @@ public class DriveSubsystem extends SubsystemBase {
         rightMasterConfig
             .idleMode(IdleMode.kBrake)
             .smartCurrentLimit(40);
-
+        
+        //configs
         SparkMaxConfig leftFollowerConfig = new SparkMaxConfig();
         SparkMaxConfig rightFollowerConfig = new SparkMaxConfig();
 
