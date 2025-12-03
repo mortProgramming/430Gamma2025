@@ -22,7 +22,7 @@ public class DriveSubsystem extends SubsystemBase {
         //normally intialize in constants
         leftMaster = new SparkMax(1, MotorType.kBrushless);
         leftFollower = new SparkMax(4, MotorType.kBrushless);
-
+        
         rightMaster = new SparkMax(2, MotorType.kBrushless);
         rightFollower = new SparkMax(3, MotorType.kBrushless);
 

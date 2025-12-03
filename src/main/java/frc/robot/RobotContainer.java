@@ -23,26 +23,31 @@ public class RobotContainer {
     )
   );
   
-    new JoystickButton(controller, XboxController.Button.kA.value)
-      .onTrue(new InstantCommand(() -> 
-        drive.setDefaultCommand(
-          new ArcadeDrive(
-            drive,
-            () -> -controller.getLeftY(),
-            () ->  controller.getLeftX()
-        )
-      )
-  ));
-
-    new JoystickButton(controller, XboxController.Button.kB.value)
-      .onTrue(new InstantCommand(() -> 
-        drive.setDefaultCommand(
-          new TankDrive(
-            drive,
-            () -> -controller.getLeftY(),
-            () -> -controller.getRightY()
-        )
-      )
-  ));
+// new JoystickButton(controller, XboxController.Button.kA.value)
+//   .onTrue(new InstantCommand(
+//     () -> drive.setDefaultCommand(
+//       new ArcadeDrive(
+//         drive,
+//         () -> -controller.getLeftY(),
+//         () -> -controller.getLeftX()
+//       )
+//     ),
+//     drive //drivetrain requirement prob fixes
+//   ));
+  
+// new JoystickButton(controller, XboxController.Button.kB.value)
+//   .onTrue(new InstantCommand(
+//     () -> drive.setDefaultCommand(
+//       new TankDrive(
+//         drive,
+//         () -> -controller.getLeftY(),
+//         () -> -controller.getRightY()
+//       )
+//     ),
+//     drive
+//   ));
+  
+//   }
   }
 }
+  
